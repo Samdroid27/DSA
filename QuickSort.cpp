@@ -14,19 +14,32 @@
 #define i32 int32_t
  
 using namespace std;
- 
-void solve(){
- 
-}
- 
-void vecinp(vi &x,int l){
-	for(int i=0;i<l;i++)
-	{
-		int k;
-		cin>>k;
-		x.pb(k);
+
+int partition(int a[],int start,int end){
+	int pivot =a[end];
+	int pIndex=start;
+	for(int i=start;i<end;i++){
+		if(a[i]<=pivot){
+			int t=a[i];
+			a[i]=a[pIndex];
+			a[pIndex]=t;
+			++pIndex;
+		}
 	}
+	int t=a[end];
+	a[end]=a[pIndex];
+	a[pIndex]=t;
+	return pIndex;
 }
+ 
+void QuickSort(int a[],int start,int end){
+ 	if(start>=end) return;
+ 	int pIndex= partition(a,start,end);
+ 	QuickSort(a,start,pIndex-1);
+ 	QuickSort(a,pIndex+1,end);
+}
+ 
+
  
 i32 main(){
 #ifndef ONLINE_JUDGE
@@ -36,8 +49,9 @@ i32 main(){
 	IOS;
 	int t;
 	cin>>t;
-	while(t--){
-		
-	}
+	int a[t];
+	for(int i=0;i<t;i++)	cin>>a[i];
+	QuickSort(a,0,t-1);
+	for(int i=0;i<t;i++) cout<<a[i]<<" ";
 	return 0;
 }
