@@ -11,17 +11,21 @@
 #define vvi(v,n,m) vector<vi> v( n , vi (m))
 #define sz(x) x.size()
 #define i32 int32_t
-#define sep " "
  
 using namespace std;
-
-void vecinp(vi &x,int l){
-	for(int i=0;i<l;i++)
-	{
-		int k;
-		cin>>k;
-		x.pb(k);
-	}
+ 
+int uglyNum(int n){
+ 	set<int> ugly;
+ 	ugly.insert(1);
+ 	int x=1;
+ 	while(n--){
+ 		x = *ugly.begin();
+ 		ugly.erase(x);
+ 		ugly.insert(x*2);
+ 		ugly.insert(x*3);
+ 		ugly.insert(x*5); 
+ 	}
+ 	return x;
 }
  
 i32 main(){
@@ -33,7 +37,9 @@ i32 main(){
 	int t;
 	cin>>t;
 	while(t--){
-		
+		int n;
+		cin>>n;
+		cout<<uglyNum(n)<<endl;
 	}
 	return 0;
 }
