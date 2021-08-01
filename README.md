@@ -12,7 +12,7 @@ The repository contains :-
 |--|------------------|------------------|--------|--------|--------|--------|--------|--------|--------|
 |A |:heavy_check_mark:|:heavy_check_mark:|:x:|:x:|:x:|:heavy_check_mark:|:x:|:heavy_check_mark:|:heavy_check_mark:|
 |B |:heavy_check_mark:|:heavy_check_mark:|:x:|:x:|:x:|:x:|:x:|:heavy_check_mark:|:heavy_check_mark:|
-|C |:heavy_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|
+|C |:heavy_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:heavy_check_mark:|:x:|
 |D |:heavy_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:heavy_check_mark:|
 |E |:heavy_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|
 |F |:heavy_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|

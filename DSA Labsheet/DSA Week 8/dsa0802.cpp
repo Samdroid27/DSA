@@ -14,23 +14,23 @@ struct Node {
 };
 
 void preorder(Node* root,vector<int> &A){
-	if(!root) return ans;
-	A.push_back(A->data);
+	if(!root) return;
+	A.push_back(root->data);
 	preorder(root->left,A);
 	preorder(root->right,A);
 }
 
 void postorder(Node* root,vector<int> &A){
-	if(!root) return ans;
+	if(!root) return ;
 	preorder(root->left,A);
 	preorder(root->right,A);
-	A.push_back(A->data);
+	A.push_back(root->data);
 }
 
 void inorder(Node* root,vector<int> &A){
-	if(!root) return ans;
+	if(!root) return ;
 	preorder(root->left,A);
-	A.push_back(A->data);
+	A.push_back(root->data);
 	preorder(root->right,A);
 }
 

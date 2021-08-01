@@ -15,25 +15,26 @@
  
 using namespace std;
 
-void vecinp(vi &x,int l){
-	for(int i=0;i<l;i++)
-	{
-		int k;
-		cin>>k;
-		x.pb(k);
-	}
-}
- 
+struct Node {
+    int data;
+    struct Node *left, *right;
+    Node(int data)
+    {
+        this->data = data;
+        left = right = NULL;
+    }
+};
+
 i32 main(){
 #ifndef ONLINE_JUDGE
 	freopen("input.txt","r",stdin);
 	freopen("output.txt","w",stdout);
 #endif
 	IOS;
-	int t;
-	cin>>t;
-	while(t--){
-		
-	}
+	int n;
+	cin>>n;
+	vi a(n);
+	for(int i=0;i<n;i++) cin>>a[i];
+	
 	return 0;
 }
