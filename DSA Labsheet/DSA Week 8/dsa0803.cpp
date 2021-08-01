@@ -38,20 +38,11 @@ void insertNewNode(vector<int> &a, int p,int child, char pos,Node* root){
 	else parent->right = node;
 }
 
-vector<int> inorder(Node* A){
-    stack<Node*> s;
-    vector<int> ans;
-    while(A || !s.empty()){
-        while(A){
-            s.push(A);
-            A = A->left;
-        }
-        A = s.top();
-        ans.push_back(A->data);
-        s.pop();
-        A=A->right;
-    }
-    return ans;
+void preorder(Node* root,vector<int> &A){
+	if(!root) return ;
+	A.push_back(root->data);
+	preorder(root->left,A);
+	preorder(root->right,A);
 }
 
 i32 main(){
@@ -72,7 +63,8 @@ i32 main(){
 		cin>>pos;
 		insertNewNode(a,p,c,pos,root);
 	}
-	vector<int> ans = inorder(root);
+	vector<int> ans;
+	preorder(root,ans);
 	for(int i:ans) cout<<i<<sep;
 	cout<<endl;
 	return 0;

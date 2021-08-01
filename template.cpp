@@ -15,26 +15,25 @@
  
 using namespace std;
 
-struct Node {
-    int data;
-    struct Node *left, *right;
-    Node(int data)
-    {
-        this->data = data;
-        left = right = NULL;
-    }
-};
-
+void vecinp(vi &x,int l){
+	for(int i=0;i<l;i++)
+	{
+		int k;
+		cin>>k;
+		x.pb(k);
+	}
+}
+ 
 i32 main(){
-#ifndef ONLINE_JUDGE
-	freopen("input.txt","r",stdin);
-	freopen("output.txt","w",stdout);
-#endif
+//#ifndef ONLINE_JUDGE
+//	freopen("input.txt","r",stdin);
+//	freopen("output.txt","w",stdout);
+//#endif
 	IOS;
-	int n;
-	cin>>n;
-	vi a(n);
-	for(int i=0;i<n;i++) cin>>a[i];
-	
+	int t;
+	cin>>t;
+	while(t--){
+		
+	}
 	return 0;
 }
