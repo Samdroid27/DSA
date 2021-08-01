@@ -10,7 +10,7 @@
 #define sz(x) x.size()
 #define i32 int32_t
 #define sep " "
-
+ 
 using namespace std;
 
 struct Node {
@@ -22,6 +22,14 @@ struct Node {
         left = right = NULL;
     }
 };
+
+Node* LCA(Node* root,int val1,int val2){
+	if(!root || root->data==val1 || root->data==val2) return root;
+	Node* L = LCA(root->left,val1,val2);
+	Node* R = LCA(root->right,val1,val2);
+	if(L && R) return root;
+	return L?L:R;
+}
 
 Node* find(Node* root,int val){
 	if(!root) return NULL;
@@ -38,30 +46,14 @@ void insertNewNode(vector<int> &a, int p,int child, char pos,Node* root){
 	else parent->right = node;
 }
 
-vector<int> inorder(Node* A){
-    stack<Node*> s;
-    vector<int> ans;
-    while(A || !s.empty()){
-        while(A){
-            s.push(A);
-            A = A->left;
-        }
-        A = s.top();
-        ans.push_back(A->data);
-        s.pop();
-        A=A->right;
-    }
-    return ans;
-}
-
 i32 main(){
 #ifndef ONLINE_JUDGE
 	freopen("input.txt","r",stdin);
 	freopen("output.txt","w",stdout);
 #endif
 	IOS;
-	int n;
-	cin>>n;
+	int n,k;
+	cin>>n>>k;
 	vi a(n);
 	for(int i=0;i<n;i++) cin>>a[i];
 	Node* root = new Node(a[0]);
@@ -72,8 +64,11 @@ i32 main(){
 		cin>>pos;
 		insertNewNode(a,p,c,pos,root);
 	}
-	vector<int> ans = inorder(root);
-	for(int i:ans) cout<<i<<sep;
-	cout<<endl;
+    while(k--){
+        int x,y;
+        cin>>x>>y;
+        Node* ancestor = LCA(root,a[x],a[y]);
+        cout<<ancestor->data<<endl;
+    }
 	return 0;
 }
