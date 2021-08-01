@@ -10,8 +10,8 @@ The repository contains :-
 
 |Q | Week 1           | Week 2           | Week 3 | Week 4 | Week 5 | Week 6 | Week 7 | Week 8 | Week 9 |
 |--|------------------|------------------|--------|--------|--------|--------|--------|--------|--------|
-|A |:heavy_check_mark:|:heavy_check_mark:|:x:|:x:|:x:|:heavy_check_mark:|:x:|:x:|:heavy_check_mark:|
-|B |:heavy_check_mark:|:heavy_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:heavy_check_mark:|
+|A |:heavy_check_mark:|:heavy_check_mark:|:x:|:x:|:x:|:heavy_check_mark:|:x:|:heavy_check_mark:|:heavy_check_mark:|
+|B |:heavy_check_mark:|:heavy_check_mark:|:x:|:x:|:x:|:x:|:x:|:heavy_check_mark:|:heavy_check_mark:|
 |C |:heavy_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|
 |D |:heavy_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:heavy_check_mark:|
 |E |:heavy_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|
