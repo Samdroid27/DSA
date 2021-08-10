@@ -15,7 +15,7 @@ The repository contains :-
 |C |:heavy_check_mark:|:x:               |:x:     |:x:               |:heavy_check_mark:|:x:               |:x:               |:heavy_check_mark:|:x:               |
 |D |:heavy_check_mark:|:x:               |:x:     |:x:               |:x:               |:x:               |:x:               |:x:               |:heavy_check_mark:|
 |E |:heavy_check_mark:|:x:               |:x:     |:x:               |:x:               |:x:               |:x:               |:heavy_check_mark:|:x:               |
-|F |:heavy_check_mark:|:x:               |:x:     |:x:               |:x:               |:x:               |:x:               |:heavy_check_mark:|:x:               |
+|F |:heavy_check_mark:|:heavy_check_mark:|:x:     |:x:               |:x:               |:x:               |:x:               |:heavy_check_mark:|:x:               |
 |G |:heavy_check_mark:|:x:               |:x:     |:heavy_check_mark:|:x:               |:x:               |:x:               |:heavy_check_mark:|:heavy_check_mark:|
 |H |:x:               |:x:               |:x:     |:x:               |:x:               |:x:               |:heavy_check_mark:|:heavy_check_mark:|:x:               |
 |I |:heavy_check_mark:|:x:               |:x:     |:x:               |:x:               |:x:               |:x:               |:heavy_check_mark:|:heavy_check_mark:|
