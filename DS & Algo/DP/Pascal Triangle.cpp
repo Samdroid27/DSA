@@ -19,7 +19,6 @@ public:
         }
         pascal.push_back(v);
         return;
-        
     }
     
     

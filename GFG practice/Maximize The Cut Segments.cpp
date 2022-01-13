@@ -13,8 +13,7 @@ class Solution
                 else if(j==0) dp[i][j]=0;
                 else if(a[i-1]<=j) dp[i][j]=max(dp[i][j-a[i-1]]+1,dp[i-1][j]);
                 else dp[i][j]=dp[i-1][j];
-            }
-            
+            } 
         }
         return dp[3][n]<0?0:dp[3][n];
     }
