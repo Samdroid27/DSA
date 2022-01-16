@@ -14,11 +14,7 @@
 #define i32 int32_t
  
 using namespace std;
- 
-void solve(){
- 
-}
- 
+
 void vecinp(vi &x,int l){
 	for(int i=0;i<l;i++)
 	{
